@@ -8,11 +8,15 @@ const { desc, title } = Astro.props;
 ---
 
 <div
-  class="block rounded-xl border border-base-300 p-8 shadow-xl transition hover:border-primary-200/10 hover:shadow-primary-300/10"
+  class="block rounded-xl border border-base-300 p-8 shadow-xl transition hover:border-primary-200/10 hover:shadow-primary-300/10 group"
 >
   <slot />
 
-  <h2 class="mt-4 text-xl font-bold text-white">{title}</h2>
+  <h2
+    class="mt-4 text-xl font-bold text-white group-hover:text-primary-200 transition-colors"
+  >
+    {title}
+  </h2>
 
   <p class="mt-1 text-sm text-gray-300">
     {desc}
