@@ -24,7 +24,7 @@ module.exports = {
         },
       },
       animation: {
-        ["infinite-slider"]: "infiniteSlider 20s linear infinite",
+        ["infinite-slider"]: "infiniteSlider 30s linear infinite",
       },
       keyframes: {
         infiniteSlider: {
